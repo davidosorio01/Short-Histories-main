@@ -1,3 +1,4 @@
+
 <script>
     import Logo from './Logo_sin_fondo.png';
    
@@ -7,31 +8,175 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio de Sesion</title>
+
     <style>
-      *{
+    *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     border: none;
     outline: none;
     font-family: 'Poppins', sans-serif;
-}
+    }
 
-.body{
-  font-size: 62.5%;
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    background-color: black;
-    color: white;
-}
+    .body{
+    font-size: 62.5%;
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        background-color: black;
+        color: white;
+    }
 
     </style>
-  </svelte:head>
+</svelte:head>
   
 
-<style>
+<div class="all">
+    <div class="header">
+        <p  class="logo"> <img src={Logo} height="60px" width="60" alt="" /> </p>
+        <nav class="active">
+            <a href="/">Inicio</a>
+            <a href="#final">Redes sociales</a>
+            <a href=""> aa</a>
+        </nav>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="https://www.booktopia.com.au/covers/big/9781413517118/0000/meter-el-diablo-en-el-infierno.jpg"  width="100%" height="100%" alt="">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title"><span>Meter el diablo en el infierno </span></h1>
+                    <p class="card-description">
+                        Giovanni Boccaccio
+                    </p>
+                    <a href="/meter_el_diablo_en_el_infierno.pdf" target="_blank">
+                        <button class="btn">Leer más</button>
+                    </a>
+                </div>
+            </div>
+			
+            <div class="card">
+                <div class="image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9TPWlnMe24ZMpUSzhkDN6_vmlngGrILMIQ&s.jpg"width="100%" height="100%" alt="">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title"><span>El cocinero chichibio</span></h1>
+                    <p class="card-description">
+                        Giovanni Boccaccio
+                    </p>
+                    <a href="/El-cocinero-Chichibio.pdf" target="_blank">
+                        <button class="btn">Leer más</button>
+                    </a>
+                </div>
+            </div>
+        
+            
+			<div class="card">
+                <div class="image-container">
+                    <img src="https://www.planetadelibros.com.co/usuaris/libros/fotos/55/m_libros/54157_historias-de-la-historia_9788408101864.jpg"width="100%" height="100%" alt="">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title"><span>Historias de las Historias </span></h1>
+                    <p class="card-description">
+                        Carlos fisas 
+                    </p>
+                    <a href="/Historias-de-a-Historia.pdf" target="_blank">
+                        <button class="btn">Leer más</button>
+                    </a>
+                </div>
+            </div>
+			<div class="card">
+                <div class="image-container">
+                    <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/b9/4d/b94d245d5ee98477b44f09cfd7e58c13.jpg"width="100%" height="100%" alt="">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title"><span>Las mil y una noche </span></h1>
+                    <p class="card-description">
+                        Carlos fisas 
+                    </p>
+                    <a href="/Las-mil-y-una-noches.pdf" target="_blank">
+                        <button class="btn">Leer más</button>
+                    </a>
+					
     
+                </div>
+            </div>
+			<div class="card">
+                <div class="image-container">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_972412-MLA50115243457_052022-O.webp.jpg"width="100%" height="100%" alt="">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title"><span>Historias de noche </span></h1>
+                    <p class="card-description">
+                        J.A WHITE 
+                    </p>
+                    <a href="/47796_Historia_de_noche.pdf" target="_blank">
+                        <button class="btn">Leer más</button>
+                    </a>
+                </div>
+            </div>
+			<div class="card">
+                <div class="image-container">
+                    <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/fe/5d/fe5df6fbd58f6af99788645240e381d4.jpg"width="100%" height="100%" alt="">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title"><span>La luz del faro </span></h1>
+                    <p class="card-description">
+                        Vicente Muñoz Puelles
+                    </p>
+                    <a href="/Luz-de-faro.pdf" target="_blank">
+                        <button class="btn">Leer más</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-container">
+                    <img src="https://covers.libro.fm/9798882264764_1120.jpg"width="100%" height="100%" alt="">
+                    
+                </div>
+                
+                <div class="card-content">
+                    <h1 class="card-title"><span>El retrato oval</span></h1>
+                    <p class="card-description">Edgar Allan Poe</p>
+                    <a href="/El-RETRATO-OVAL.pdf" target="_blank">
+                        <button class="btn">Leer más</button>
+                    </a>
+                </div>
+            </div>
+
+			<div class="card">
+                <div class="image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Uh6-6BjzBTxXxSO-zaUVeEpit6Hk6kiyOw&s.jpg"width="100%" height="100%" alt="">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-title"><span>La niña perdida espera a Peter Pan</span></h1>
+                    <p class="card-description">
+                        Anonimo
+                    </p>
+                    <a href="/17-la-nina-perdida-espera-a-peter.pan.pdf" target="_blank">
+                        <button class="btn">Leer más</button>
+                    </a>
+                </div>
+            </div>
+
+			
+        </div>
+    </section>
+
+	<section id="final">
+			<h2>Si gustas puedes seguirnos en nuestras redes sociales </h2>
+			<div class="social-icons">
+				<a href="https://x.com/ShortHistoriess"><i class="fa-brands fa-x-twitter"></i></a>
+				<a href="https://www.instagram.com/short_historiess/"><i class="fa-brands fa-instagram"></i></a>
+			</div>
+	</section>
+</div>
+
+<style>
 	.all {
 		margin: 0;
 		padding: 0;
@@ -244,155 +389,3 @@
 	}
 	
 </style>
-
-<div class="all">
-    <div class="header">
-        <p  class="logo"> <img src={Logo} height="60px" width="60" alt="" /> </p>
-        
-    
-        <nav class="active">
-            <a href="/">Inicio</a>
-            <a href="#final">Redes sociales</a>
-            <a href=""> aa</a>
-        </nav>
-    </div>
-    <section>
-        <div class="container">
-            <div class="card">
-                <div class="image-container">
-                    <img src="https://www.booktopia.com.au/covers/big/9781413517118/0000/meter-el-diablo-en-el-infierno.jpg"  width="100%" height="100%" alt="">
-                </div>
-                <div class="card-content">
-                    <h1 class="card-title"><span>Meter el diablo en el infierno </span></h1>
-                    <p class="card-description">
-                        Giovanni Boccaccio
-                    </p>
-                    <a href="/meter_el_diablo_en_el_infierno.pdf" target="_blank">
-                        <button class="btn">Leer más</button>
-                    </a>
-                </div>
-            </div>
-			
-            <div class="card">
-                <div class="image-container">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9TPWlnMe24ZMpUSzhkDN6_vmlngGrILMIQ&s.jpg"width="100%" height="100%" alt="">
-                </div>
-                <div class="card-content">
-                    <h1 class="card-title"><span>El cocinero chichibio</span></h1>
-                    <p class="card-description">Giovanni Boccaccio</p>
-                    <a href="/El-cocinero-Chichibio.pdf" target="_blank">
-                        <button class="btn">Leer más</button>
-                    </a>
-                </div>
-            </div>
-        
-            
-			<div class="card">
-                <div class="image-container">
-                    <img src="https://www.planetadelibros.com.co/usuaris/libros/fotos/55/m_libros/54157_historias-de-la-historia_9788408101864.jpg"width="100%" height="100%" alt="">
-                </div>
-                <div class="card-content">
-                    <h1 class="card-title"><span>Historias de las Historias </span></h1>
-                    <p class="card-description">
-                        Carlos fisas 
-                    </p>
-                    <a href="/Historias-de-a-Historia.pdf" target="_blank">
-                        <button class="btn">Leer más</button>
-                    </a>
-					
-    
-                </div>
-            </div>
-			<div class="card">
-                <div class="image-container">
-                    <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/b9/4d/b94d245d5ee98477b44f09cfd7e58c13.jpg"width="100%" height="100%" alt="">
-                </div>
-                <div class="card-content">
-                    <h1 class="card-title"><span>Las mil y una noche </span></h1>
-                    <p class="card-description">
-                        Carlos fisas 
-                    </p>
-                    <a href="/Las-mil-y-una-noches.pdf" target="_blank">
-                        <button class="btn">Leer más</button>
-                    </a>
-					
-    
-                </div>
-            </div>
-			<div class="card">
-                <div class="image-container">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_972412-MLA50115243457_052022-O.webp.jpg"width="100%" height="100%" alt="">
-                </div>
-                <div class="card-content">
-                    <h1 class="card-title"><span>Historias de noche </span></h1>
-                    <p class="card-description">
-                        J.A WHITE 
-                    </p>
-                    <a href="/47796_Historia_de_noche.pdf" target="_blank">
-                        <button class="btn">Leer más</button>
-                    </a>
-					
-    
-                </div>
-            </div>
-			<div class="card">
-                <div class="image-container">
-                    <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/fe/5d/fe5df6fbd58f6af99788645240e381d4.jpg"width="100%" height="100%" alt="">
-                </div>
-                <div class="card-content">
-                    <h1 class="card-title"><span>La luz del faro </span></h1>
-                    <p class="card-description">
-                        Vicente Muñoz Puelles
-                    </p>
-                    <a href="/Luz-de-faro.pdf" target="_blank">
-                        <button class="btn">Leer más</button>
-                    </a>
-					
-    
-                </div>
-            </div>
-            <div class="card">
-                <div class="image-container">
-                    <img src="https://covers.libro.fm/9798882264764_1120.jpg"width="100%" height="100%" alt="">
-                    
-                </div>
-                
-                <div class="card-content">
-                    <h1 class="card-title"><span>El retrato oval</span></h1>
-                    <p class="card-description">Edgar Allan Poe</p>
-                    <a href="/El-RETRATO-OVAL.pdf" target="_blank">
-                        <button class="btn">Leer más</button>
-                    </a>
-                </div>
-            </div>
-
-			<div class="card">
-                <div class="image-container">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Uh6-6BjzBTxXxSO-zaUVeEpit6Hk6kiyOw&s.jpg"width="100%" height="100%" alt="">
-                </div>
-                <div class="card-content">
-                    <h1 class="card-title"><span>La niña perdida espera a Peter Pan</span></h1>
-                    <p class="card-description">
-                        Anonimo
-                    </p>
-                    <a href="/17-la-nina-perdida-espera-a-peter.pan.pdf" target="_blank">
-                        <button class="btn">Leer más</button>
-                    </a>
-					
-    
-                </div>
-            </div>
-
-			
-        </div>
-    </section>
-    
-    
-	<section id="final">
-			<h2>Si gustas puedes seguirnos en nuestras redes sociales </h2>
-			<div class="social-icons">
-				<a href="https://x.com/ShortHistoriess"><i class="fa-brands fa-x-twitter"></i></a>
-				<a href="https://www.instagram.com/short_historiess/"><i class="fa-brands fa-instagram"></i></a>
-			</div>
-	</section>
-</div>

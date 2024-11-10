@@ -1,110 +1,103 @@
+
 <script>
 	import Logo from './Logo_sin_fondo.png';
 	import Principal from './principal.png';
-	import { goto } from '$app/navigation';
+	import {goto} from '$app/navigation';
 </script>
 
 <svelte:head>
 	<title>Short Histories</title>
+
 	<style>
 		*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
-}
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		border: none;
+		outline: none;
+		font-family: 'Poppins', sans-serif;
+		}
 
-body{
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    background-color: black;
-    color: white;
-}
-
+		body{
+			width: 100%;
+			height: 100vh;
+			overflow-x: hidden;
+			background-color: black;
+			color: white;
+		}
 	</style>
 </svelte:head>
 
 <div class="all">
-	
-		<div class="header">
-			<p  class="logo"> <img src={Logo} height="60px" width="60" alt="" /> </p>
+	<div class="header">
+		<p  class="logo"> <img src={Logo} height="60px" width="60" alt="" /> </p>
 			
-			
-			<nav>
-				<a href="#inicio">Inicio</a>
-				<a href="#nuestros-programas">Nuestros contenidos</a>
-				<a href="#final">Redes sociales</a>
-				<a href="/InicioSesion">Inicia Sesion</a>
-				<a href=""> </a>
-				<a href="#">Servicios</a>
-			</nav>
+		<nav>
+			<a href="#inicio">Inicio</a>
+			<a href="#nuestros-programas">Nuestros contenidos</a>
+			<a href="#final">Redes sociales</a>
+			<a href="/InicioSesion">Inicia Sesion</a>
+			<a href=""> </a>
+			<a href="#">Servicios</a>
+		</nav>
+	</div>
+
+	<section id="inicio" class="home">
+		<div class="home-img">
+			<img src={Principal} alt="" />
 		</div>
-
-		<section id="inicio" class="home">
-			<div class="home-img">
-				<img src={Principal} alt="" />
-			</div>
-			<div class="home-content">
+		<div class="home-content">
 				
-				<h3 class="typing-text">Somos <span></span></h3>
-				<p>
-					Nuestro objetivo al crear esta pagina es que personas puedan escribir historias cortas y
-						leerlas. Esto con el fin de mejorar la comprension lectora de personas.
-						
-				</p>
-				<br>
-				<button class="btn" onclick={()=>goto('/InicioSesion')}>Registrate</button>
+			<h3 class="typing-text">Somos <span></span></h3>
+			<p>
+				Nuestro objetivo al crear esta pagina es que personas puedan escribir historias cortas y
+				leerlas. Esto con el fin de mejorar la comprension lectora de personas.	
+			</p>
+			<br>
+			<button class="btn" onclick={()=>goto('/InicioSesion')}>Registrate</button>
 				
-			</div>
-		</section>
+		</div>
+	</section>
 
-		<section id="nuestros-programas">
-			<div class="container">
-				<h2>Nuestros contenidos</h2>
-				<div class="programas">
-					<div class="carta">
-						<h3>
-							<span>Generos variados </span><br> <br>
-							Tendremos amplia variedad de generos ya que personas subiran sus historias y pondran mas
-							generos.
-						</h3>
+	<section id="nuestros-programas">
+		<div class="container">
+			<h2>Nuestros contenidos</h2>
+			<div class="programas">
+				<div class="carta">
+					<h3>
+						<span>Generos variados </span><br> <br>
+						Tendremos amplia variedad de generos ya que personas subiran sus historias y pondran mas
+						generos.
+					</h3>
 						
+				</div>
+				<div class="carta">
+					<h3>
+						<span>Actividades dinamimcas </span><br> <br>
+						Al finalizar de leer las historias habran unas actividades con el fin de mejorar la
+						comprension lectora.
+					</h3>
 						
-					</div>
-					<div class="carta">
-						<h3>
-							<span>Actividades dinamimcas </span><br> <br>
-							Al finalizar de leer las historias habran unas actividades con el fin de mejorar la
-							comprension lectora.
-
-						</h3>
-						
-						
-					</div>
-					<div class="carta">
-						<h3>
-							<span>Escribe y lee contenido</span>
-							<br> <br>
-							Las personas tendran acceso a subir historias y/o leerlas, podran demostrar su creatividad
-							y tambien ganaran seguidores.
-						</h3>
-						
-					</div>
+				</div>
+				<div class="carta">
+					<h3>
+						<span>Escribe y lee contenido</span>
+						<br> <br>
+						Las personas tendran acceso a subir historias y/o leerlas, podran demostrar su creatividad
+						y tambien ganaran seguidores.
+					</h3>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section id="final">
-			<h2>Si gustas puedes seguirnos en nuestras redes sociales </h2>
-			<div class="social-icons">
-				<a href="https://x.com/ShortHistoriess"><i class="fa-brands fa-x-twitter"></i></a>
-				<a href="https://www.instagram.com/short_historiess/"><i class="fa-brands fa-instagram"></i></a>
-			</div>
-		</section>
-
+	<section id="final">
+		<h2>Si gustas puedes seguirnos en nuestras redes sociales </h2>
+		<div class="social-icons">
+			<a href="https://x.com/ShortHistoriess"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="https://www.instagram.com/short_historiess/"><i class="fa-brands fa-instagram"></i></a>
+		</div>
+	</section>
 </div>
 
 <style>
