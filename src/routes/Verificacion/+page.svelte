@@ -13,7 +13,6 @@
   function toggleModal() {
         showModal = !showModal;
   }
-
 </script>
   
   <svelte:head>
@@ -26,32 +25,30 @@
     <title>Inicio de Sesion</title>
 
     <style>
-    *{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
-    }
+      *{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      font-family: 'Poppins', sans-serif;
+      }
 
 
-    .body{
-      font-size: 62.5%;
-        width: 100%;
-        height: 100vh;
-        overflow-x: hidden;
-        background-color: black;
-        color: white;
-    }
-
+      .body{
+        font-size: 62.5%;
+          width: 100%;
+          height: 100vh;
+          overflow-x: hidden;
+          background-color: black;
+          color: white;
+      }
     </style>
   </svelte:head>
   <div class="header">
     <p  class="logo"> <img src={Logo} height="60px" width="60" alt="" /> </p>
-    
-    
   </div>
+  
   <div class="body">
     <div class="container" class:sign-up-mode={signUpMode}>
       <div class="forms-container">

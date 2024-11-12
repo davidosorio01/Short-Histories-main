@@ -7,18 +7,18 @@
   }
   import Logo from './Logo_sin_fondo.png';
 
-  </script>
-    <svelte:head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</script>
+  <svelte:head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-      <title>Inicio de Sesion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Inicio de Sesion</title>
 
-      <style>
-        *{
+    <style>
+      *{
       margin: 0;
       padding: 0;
       text-decoration: none;
@@ -37,13 +37,10 @@
           color: white;
       }
     </style>
-
   </svelte:head>
 
   <div class="header">
     <p  class="logo"> <img src={Logo} height="60px" width="60" alt="" /> </p>
-    
-    
   </div>
   
   <div class="body">
@@ -134,9 +131,8 @@
         </div>
       </div>
     </div>
+  </div>
 
-
-</div>
   <style>  
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
@@ -485,7 +481,7 @@
       transform: translateX(800px);
     }
 
-/* ANIMATION */
+  /* ANIMATION */
 
     .container.sign-up-mode:before {
       transform: translate(100%, -50%);
