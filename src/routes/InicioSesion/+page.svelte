@@ -1,4 +1,3 @@
-
 <script lang="ts">
   let signUpMode = false;
   function toggleSignUp() {
@@ -47,15 +46,15 @@
     <div class="container" class:sign-up-mode={signUpMode}>
       <div class="forms-container">
         <div class="signin-signup">
-          <form action='?/inicioSesion' method="post" class="sign-in-form">
+          <form action='?/login' method="post" class="sign-in-form">
             <h2 class="title">Iniciar Sesion</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Usuario" name="UserName"/>
+              <input type="text" placeholder="email" name="correo"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Contraseña" name="UserPassword"/>
+              <input type="password" placeholder="Contraseña" name="password"/>
             </div>
             
             <input type="submit" value="Iniciar sesion" class="btn solid" />
@@ -83,19 +82,19 @@
             </div>
           </form>
   
-          <form action='?/inicioSesion' method="post" class="sign-up-form">
+          <form action='?/register' method="post" class="sign-up-form">
             <h2 class="title">Registro</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Usuario" name="UserName" />
+              <input type="text" placeholder="Usuario" name="usuario" />
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" name="UserEmail" />
+              <input type="email" placeholder="Email" name="correo" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Contraseña" name="UserPassword" />
+              <input type="password" placeholder="Contraseña" name="password" />
             </div>
             <input type="submit" class="btn" value="Registrarse" />
             <p class="social-text">O Registrate con estas plataformas</p>
