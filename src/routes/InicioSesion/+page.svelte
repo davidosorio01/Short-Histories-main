@@ -50,7 +50,7 @@
             <h2 class="title">Iniciar Sesion</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="email" name="correo"/>
+              <input type="text" placeholder="Email" name="correo"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
@@ -142,12 +142,11 @@
     }
 
     .header {
-      margin-top: 20px;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      padding: 2% 4%;
+      padding: 0.5% ;
       background-color: transparent;
       filter: drop-shadow(10px);
       display: flex;

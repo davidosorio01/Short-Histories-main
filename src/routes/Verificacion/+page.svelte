@@ -1,9 +1,10 @@
-
-<script>
+<script lang="ts">
   let signUpMode = false;
   let showImage = false;
   import Logo from './Logo_sin_fondo.png';
   let showModal = false;
+  let showPasswordModal = false;
+
 
   function toggleSignUp() {
     signUpMode = !signUpMode;
@@ -13,6 +14,17 @@
   function toggleModal() {
         showModal = !showModal;
   }
+
+  function openPasswordModal() {
+    showPasswordModal = true;
+    showModal = false;
+  }
+
+  function closePasswordModal() {
+    showPasswordModal = false;
+  }
+
+  
 </script>
   
   <svelte:head>
@@ -104,10 +116,31 @@
                             <input type="text" maxlength="1">
                             <input type="text" maxlength="1">
                         </div>
-                          <button on:click={toggleModal}>Confirmar</button>
+                          <button on:click={openPasswordModal}>Confirmar</button>
+                          
                       </div>
                   </div>
               {/if}
+
+              {#if showPasswordModal}
+                <!-- Modal para Cambiar Contraseña -->
+                <div class="modal-background" on:click={closePasswordModal}>
+                  <div class="modal-content" on:click|stopPropagation>
+                    <h3>Cambiar Contraseña</h3>
+                    <p>Por favor, ingresa tu nueva contraseña.</p>
+                    <div class="input-field">
+                      <i class="fas fa-lock"></i>
+                      <input type="password" placeholder="Nueva Contraseña" />
+                    </div>
+                    <div class="input-field">
+                      <i class="fas fa-lock"></i>
+                      <input type="password" placeholder="Confirmar Contraseña" />
+                    </div>
+                    <button on:click={closePasswordModal}>Guardar</button>
+                  </div>
+                </div>
+              {/if}
+              
           </form>
         </div>
       </div>
@@ -252,7 +285,7 @@
     .container {
       position: relative;
       width: 100%;
-      background-color: #fff;
+      background-color: rgb(255, 255, 255);
       min-height: 100vh;
       overflow: hidden;
     }
