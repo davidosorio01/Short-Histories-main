@@ -1,7 +1,7 @@
 
 <script>
     import Logo from './Logo_sin_fondo.png';
-   
+
 </script>
 
 <svelte:head>
@@ -35,6 +35,10 @@
 <div class="all">
     <div class="header">
         <p  class="logo"> <img src={Logo} height="60px" width="60" alt="" /> </p>
+        <div class="search-container">
+    
+            <button class="btnb">Buscar</button>
+        </div>
         <nav class="active">
             <a href="/">Inicio</a>
             <a href="#final">Redes sociales</a>
@@ -204,13 +208,47 @@
 		transform: scale(1.1);
 	}
 
+    .search-container {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .search-box {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4rem;
+    }
+
+    .btnb {
+		display: inline-block;
+		padding: 0.7rem 2rem;
+		background-color: black;
+		border-radius: 4rem;
+		font-size: 15px;
+		color: #b74b4b;
+		font-weight: 600;
+		border: 2px solid #b74b4b;
+		transition: 0.3s ease;
+		cursor: pointer;
+	}
+
+	.btnb:hover {
+		transform: scale3d(1.03);
+		background-color: #b74b4b;
+		color: black;
+		box-shadow: 0 0 25px #b74b4b;
+	}
+
+    
+
 	span {
 		color: #b74b4b;
 	}
 
     .container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        grid-template-columns: repeat(3, 1fr); /* Dos columnas */
         gap: 20px; /* Espacio entre tarjetas */
         justify-content: center;
         margin-top: 100px;
@@ -261,9 +299,8 @@
 		padding: 1rem 2.8rem;
 		background-color: black;
 		border-radius: 4rem;
-		font-size: 1.6rem;
+		font-size: 1rem;
 		color: #b74b4b;
-		letter-spacing: 0.3rem;
 		font-weight: 600;
 		border: 2px solid #b74b4b;
 		transition: 0.3s ease;
@@ -284,7 +321,7 @@
 		left: 0;
 		width: 100%;
 		padding: 1rem 4%;
-		background-color: transparent;
+		background-color: rgba(0, 0, 0, 0);
 		filter: drop-shadow(10px);
 		display: flex;
 		justify-content: space-between;

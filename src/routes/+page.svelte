@@ -75,7 +75,7 @@
 					<h3>
 						<span>Actividades dinamimcas </span><br> <br>
 						Al finalizar de leer las historias habran unas actividades con el fin de mejorar la
-						comprension lectora.
+						comprension lectora. <span>(Proximamente)</span>
 					</h3>
 						
 				</div>
